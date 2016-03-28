@@ -1,0 +1,13 @@
+*
+**
+**/*
+!/.config/compton.conf
+!/.config/gtk-3.0/gtk.css
+!/.local/bin/mykeyboardsetup.sh
+!/.local/bin/mywacomsetup.sh
+!/.local/bin/setwallpaper.sh
+!/.local/bin/update-pulseaudio.sh
+!/.Xresources
+!/.xsessionrc
+!/.gitignore.d/
+!/.gitignore.d/dotfiles-xsession
