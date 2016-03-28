@@ -1,0 +1,8 @@
+@import url("session.css");
+
+/* smaller toolbar buttons */
+
+.toolbar .button, .primary-toolba .button
+{
+padding:        2px 4px;
+}

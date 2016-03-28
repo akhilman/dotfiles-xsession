@@ -1,0 +1,79 @@
+!DPI and hinting
+! Xft.dpi: 100
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.antialias: true 
+Xft.rgba: rgb
+
+! stuff
+! Xcursor.theme: oxy-green
+
+! lightdm new session
+xscreensaver.newLoginCommand: dm-tool switch-to-greeter
+
+! urxvt
+!URxvt*iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
+URxvt*iconFile: /usr/share/pixmaps/urxvt_48x48.xpm
+URxvt*iso14755: False
+URxvt*reverseVideo: false
+URxvt*dvtollTttyOutput: false
+URxvt*cursorBlink: true
+URxvt*jumpScroll: true
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+URxvt*borderLess: false
+URxvt*urgentOnBell: true
+URxvt*visualBell: false
+
+URxvt*scrollBar: false
+!URxvt*scrollColor: #303030
+!URxvt*scrollBar_right: true
+!URxvt*font: xft:Terminus:pixelsize=18
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=15
+URxvt*termName: xterm
+! URxvt*backgroundPixmap: /home/ildar/share/wallpapers/termbg.png;:root
+URxvt*transparent: true
+URxvt*shading: 10
+! URxvt.depth: 32
+! URxvt.background: rgba:1111/1111/1111/df00
+
+! URxvt*background: Black
+! URxvt*depth: 32
+! URxvt*background: rgba:0000/0000/0000/dddd
+
+URxvt*borderColor: #343434
+URxvt*cursorColor: #ff993f
+URxvt*background: #111111
+URxvt*foreground: #cdcdcd
+
+URxvt*color0: #000000
+URxvt*color8: #4C4C4C
+
+URxvt*color1: #CD0000
+URxvt*color9: #FF0000
+
+URxvt*color2: #00CD00
+URxvt*color10: #00FF00
+
+URxvt*color3: #CDCD00
+URxvt*color11: #FFFF00
+
+URxvt*color4: #2244FF
+URxvt*color12: #4488FF
+
+URxvt*color5: #CD00CD
+URxvt*color13: #FF00FF
+
+URxvt*color6: #00CDCD
+URxvt*color14: #00FFFF
+
+URxvt*color7: #E5E5E5
+URxvt*color15: #FFFFFF
+
+
+! http://www.xcolors.net/ !
+
+
+
+
