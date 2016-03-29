@@ -16,7 +16,6 @@ setup_gnome_keyring() {
 #export QT_PLUGIN_PATH=$T_PLGIN_PATH:/usr/lib/kde4/plugins/
 export GTK_IM_MODULE="xim"
 . ~/.profile
-/home/ildar/.local/bin/mykeyboardsetup.sh
 
 
 # session specific gtk.css
