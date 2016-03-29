@@ -73,16 +73,12 @@ then
     ) &
 
 
-elif [ _$XDG_CURRENT_DESKTOP = _XFCE ]
+elif [ _$XDG_CURRENT_DESKTOP = _XFCE ] || \
+    [ _$XDG_CURRENT_DESKTOP = _MATE ]
 then
     # env
     export QT_STYLE_OVERRIDE=gtk
-
-elif [ _$XDG_CURRENT_DESKTOP = _MATE ]
-then
-    # env
-    export QT_STYLE_OVERRIDE=gtk
-
+    which winwrangler && winwrangler -d
 fi
  
  
