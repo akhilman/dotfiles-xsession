@@ -13,7 +13,7 @@ setup() {
     fi
 
     xkbset -accessx
-    setxkbmap -option "terminate:ctrl_alt_bksp,grp:caps_switch,grp:win_space_toggle,grp_led:$grp_led,compose:ralt,lv3:lsgt_switch"
+    setxkbmap -option "terminate:ctrl_alt_bksp,grp:caps_switch,grp:alt_shift_toggle,grp_led:$grp_led,compose:ralt,lv3:lsgt_switch"
     setlayout ru
     # numlockx
     # kbdd &
