@@ -96,7 +96,7 @@ elif [ _$XDG_CURRENT_DESKTOP = _XFCE ] || \
 then
     # env
     export QT_STYLE_OVERRIDE=gtk
-    which winwrangler && winwrangler -d
+    which winwrangler && winwrangler -d &
 fi
 
 
