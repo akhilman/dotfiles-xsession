@@ -67,11 +67,21 @@ fi
 
 if [ _$XDG_CURRENT_DESKTOP = _i3 ] || \
     [ _$XDG_SESSION_DESKTOP = _awesome ]
+    [ _$XDG_CURRENT_DESKTOP = _XFCE ] || \
+    [ _$XDG_CURRENT_DESKTOP = _MATE ]
+then
+    # env
+    export DESKTOP_SESSION=gnome  # sets qt4 app appearence
+    export QT_STYLE_OVERRIDE=gtk  # sets qt5 app appearence
+fi
+
+
+if [ _$XDG_CURRENT_DESKTOP = _i3 ] || \
+    [ _$XDG_SESSION_DESKTOP = _awesome ]
 then
     # env
     setup_dbus
     setup_gnome_keyring
-    export QT_STYLE_OVERRIDE=gtk
 
     # xfce4 integration
     export XDG_CURRENT_DESKTOP=XFCE
@@ -94,8 +104,6 @@ then
 elif [ _$XDG_CURRENT_DESKTOP = _XFCE ] || \
     [ _$XDG_CURRENT_DESKTOP = _MATE ]
 then
-    # env
-    export QT_STYLE_OVERRIDE=gtk
     which winwrangler && winwrangler -d &
 fi
 
