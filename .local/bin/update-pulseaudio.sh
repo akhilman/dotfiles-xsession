@@ -1,7 +1,7 @@
 #!/bin/bash
 shopt -s nullglob
 
-for d in ~/.pulse/*
+for d in ~/.config/pulse/*
 do
     [ -d $d ] && [[ $d =~ .*\.(pa|conf)\.d$ ]] || continue
     targ=${d%.d}
