@@ -64,7 +64,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-30+20"
+    geometry = "300x5-30+30"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -159,10 +159,10 @@
     # Xev might be helpful to find names for keys.
     
     # Close notification.
-    close = mod4+Delete
+    close = mod4+Next
     
     # Close all notifications.
-    close_all = mod4+shift+Delete
+    close_all = mod4+End
     
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
@@ -241,5 +241,10 @@
 #    appname = Pidgin
 #    summary = *twitter.com*
 #    urgency = normal
-#
+
+[volicon]
+    appname = Volume Icon
+    format = ""
+    urgency = low
+
 # vim: ft=cfg
