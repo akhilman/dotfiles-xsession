@@ -1,3 +1,7 @@
+!
+! xrdb ~/.Xresources to reload
+!
+
 !DPI and hinting
 ! Xft.dpi: 100
 Xft.hinting: true
