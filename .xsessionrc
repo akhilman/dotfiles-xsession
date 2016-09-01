@@ -108,12 +108,5 @@ then
 fi
 
 
-if [ -x /usr/sbin/bbackupctl ] && [ -e ~/.config/boxbackup/bbackupd.conf ]
-then
-    [ -e ~/.cache/bbackupd/bbackupd.pid ] && kill -0 $(cat ~/.cache/bbackupd/bbackupd.pid) \
-        || /usr/sbin/bbackupd -c ~/.config/boxbackup/bbackupd.conf
-fi
-
-
 unset setup_dbus
 unset setup_gnome_keyring
