@@ -101,13 +101,6 @@ then
     ) &
 
 
-elif [ _$XDG_SESSION_DESKTOP = _xfce ] || \
-    [ _$XDG_SESSION_DESKTOP = _mate ]
-then
-    which winwrangler && winwrangler -d &
-fi
-
-
 # workaround for https://github.com/awesomeWM/awesome/issues/196
 # should be fixed in awesome-3.6.*
 if [ _$XDG_SESSION_DESKTOP = _awesome ] && \
