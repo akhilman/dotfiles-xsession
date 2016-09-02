@@ -108,5 +108,14 @@ then
 fi
 
 
+# workaround for https://github.com/awesomeWM/awesome/issues/196
+# should be fixed in awesome-3.6.*
+if [ _$XDG_SESSION_DESKTOP = _awesome ] && \
+    [ $(awesome --version | sed -n 's/awesome v\([0-9]*\.[0-9]*\).*/\1/p') = 3.5 ]
+then
+    xkbcomp $DISPLAY - | egrep -v "group . = AltGr;" | xkbcomp - $DISPLAY
+fi
+
+
 unset setup_dbus
 unset setup_gnome_keyring
