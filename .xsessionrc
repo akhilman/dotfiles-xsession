@@ -99,6 +99,7 @@ then
         setwallpaper.sh
     done
     ) &
+fi
 
 
 # workaround for https://github.com/awesomeWM/awesome/issues/196
