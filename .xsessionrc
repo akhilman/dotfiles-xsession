@@ -72,7 +72,12 @@ if [ _$XDG_SESSION_DESKTOP = _i3 ] || \
 then
     # env
     export DESKTOP_SESSION=gnome  # sets qt4 app appearence
-    export QT_STYLE_OVERRIDE=gtk  # sets qt5 app appearence
+    if which qt5ct
+    then
+        export QT_QPA_PLATFORMTHEME=qt5ct  # sets qt5 app appearence
+    else
+        export QT_STYLE_OVERRIDE=gtk  # sets qt5 app appearence
+    fi
 fi
 
 
@@ -82,6 +87,9 @@ then
     # env
     setup_dbus
     setup_gnome_keyring
+
+    # notification daemon
+    dunst &
 
     # xfce4 integration
     export XDG_CURRENT_DESKTOP=XFCE
