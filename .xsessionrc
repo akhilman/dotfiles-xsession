@@ -38,11 +38,10 @@ fi
 
 
 # setup keyboard layout
-grp_led=scroll
-[ $(hostname) = blackbox ] && grp_led=caps
-setxkbmap -layout us,ru -option \
-    "grp:caps_toggle,lv3:ralt_switch_multikey,terminate:ctrl_alt_bksp,grp_led:$grp_led,esperanto:qwerty"
-unset grp_led
+setxkbmap -layout us,ru
+setxkbmap -option
+setxkbmap -option "grp:caps_toggle,grp_len:scroll,lv3:ralt_switch,compose:rctrl,esperanto:qwerty,terminate:ctrl_alt_bksp"
+[ $(hostname) = blackbox ] && setxkbmap -option "grp_led:caps"
 
 
 # session specific gtk.css
